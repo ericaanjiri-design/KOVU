@@ -1,4 +1,5 @@
 import React from 'react';
+import logoImg from '../assets/kov.png';
 
 const navLinks = [
   { label: 'About Kovu', id: 'about' },
@@ -37,18 +38,21 @@ const Footer = () => {
 
           {/* Brand — 4 cols */}
           <div className="md:col-span-4">
-            <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="flex flex-col items-start mb-6">
-              <span style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: 'clamp(2rem,3vw,3.8rem)', fontWeight: 300, color: 'white', letterSpacing: '0.04em', lineHeight: 1 }}>
-                Kovu Afrika
-              </span>
-              <span style={{ fontFamily: 'Inter, sans-serif', fontSize: '0.5rem', letterSpacing: '0.45em', textTransform: 'uppercase', color: 'rgba(200,169,107,0.6)', marginTop: '0.35rem' }}>
-                VistaVoyage CSR Foundation
-              </span>
+            <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="flex items-center gap-4 mb-6">
+              <img src={logoImg} alt="Kovu Afrika" style={{ width: 36, height: 36, borderRadius: '50%', objectFit: 'cover', border: '1px solid rgba(200,169,107,0.35)' }} />
+              <div className="flex flex-col items-start">
+                <span style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: '1.4rem', fontWeight: 300, color: 'white', letterSpacing: '0.06em', lineHeight: 1 }}>
+                  Kovu Afrika
+                </span>
+                <span style={{ fontFamily: 'Inter, sans-serif', fontSize: '0.48rem', letterSpacing: '0.45em', textTransform: 'uppercase', color: 'rgba(200,169,107,0.6)', marginTop: '0.35rem' }}>
+                  VistaVoyage Foundation
+                </span>
+              </div>
             </button>
 
             <div className="h-px w-10 mb-6" style={{ background: 'rgba(200,169,107,0.3)' }} />
 
-            <p style={{ fontFamily: 'Inter, sans-serif', fontSize: '0.82rem', color: 'rgba(255,255,255,0.35)', lineHeight: 1.9, marginBottom: '2rem' }}>
+            <p style={{ fontFamily: 'Inter, sans-serif', fontSize: '0.82rem', color: 'rgba(255,255,255,0.85)', lineHeight: 1.9, marginBottom: '2rem' }}>
               Healing Landscapes. Empowering Lives. The CSR Foundation of VistaVoyage Travel Group,
               committed to leaving Africa better than we found it — one journey at a time.
             </p>
@@ -125,7 +129,7 @@ const Footer = () => {
               <p style={{ fontFamily: 'Inter, sans-serif', fontSize: '0.55rem', letterSpacing: '0.35em', textTransform: 'uppercase', color: 'rgba(200,169,107,0.5)', marginBottom: '0.75rem' }}>
                 Our Location
               </p>
-              <p style={{ fontFamily: 'Inter, sans-serif', fontSize: '0.82rem', color: 'rgba(255,255,255,0.35)', lineHeight: 1.8 }}>
+              <p style={{ fontFamily: 'Inter, sans-serif', fontSize: '0.82rem', color: 'rgba(255,255,255,0.85)', lineHeight: 1.8 }}>
                 Applewood Adams, Ngong Road<br />
                 Nairobi — 9th Floor, Office 904B
               </p>

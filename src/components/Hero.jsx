@@ -55,7 +55,7 @@ const Hero = () => {
 
         <div className="flex items-center gap-4 mb-8" style={anim(0.3)}>
           <div className="h-px w-10" style={{ background: '#C8A96B' }} />
-          <span className="section-label">The CSR Foundation of VistaVoyage Travel Group</span>
+          {/* <span className="section-label">The CSR Foundation of VistaVoyage Travel Group</span> */}
         </div>
 
         <div className="mb-10 overflow-hidden">
@@ -80,7 +80,7 @@ const Hero = () => {
         <div className="flex flex-col lg:flex-row lg:items-end gap-10 mb-16">
           <div className="max-w-lg" style={anim(0.85)}>
             <div className="h-px w-12 mb-6" style={{ background: 'rgba(200,169,107,0.4)' }} />
-            <p style={{ fontFamily: 'Inter, sans-serif', fontSize: '0.95rem', color: 'rgba(255,255,255,0.55)', lineHeight: 1.8 }}>
+            <p style={{ fontFamily: 'Inter, sans-serif', fontSize: '0.95rem', color: 'rgba(255,255,255,0.9)', lineHeight: 1.8 }}>
               Through conservation, community empowerment, and regenerative travel,
               every VistaVoyage journey leaves Africa measurably better than we found it.
             </p>
@@ -97,28 +97,29 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4" style={anim(1.2)}>
-          {stats.map((s, i) => (
-            <div key={i} className="hover-lift rounded-2xl p-5 md:p-6 group cursor-default"
-              style={{
-                background: 'rgba(6,35,24,0.7)',
-                backdropFilter: 'blur(24px)',
-                border: '1px solid rgba(200,169,107,0.18)',
-                boxShadow: '0 8px 40px rgba(0,0,0,0.3)',
-                transition: 'all 0.6s cubic-bezier(0.22,1,0.36,1)',
-              }}
-              onMouseEnter={e => e.currentTarget.style.borderColor = 'rgba(200,169,107,0.45)'}
-              onMouseLeave={e => e.currentTarget.style.borderColor = 'rgba(200,169,107,0.18)'}>
-              <div className="mb-3" style={{ color: 'rgba(200,169,107,0.8)' }}><s.Icon size={22} /></div>
-              <div className="gold-text mb-1"
-                style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: 'clamp(1.8rem, 3.5vw, 2.8rem)', fontWeight: 300, lineHeight: 1 }}>
-                {s.value}
+        <div style={{ background: 'rgba(255,255,255,0.92)', backdropFilter: 'blur(24px)', borderRadius: '1rem', padding: '1.25rem', border: '1px solid rgba(200,169,107,0.18)', boxShadow: '0 8px 40px rgba(0,0,0,0.2)', ...anim(1.2) }}>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
+            {stats.map((s, i) => (
+              <div key={i} className="hover-lift rounded-2xl p-5 md:p-6 group cursor-default"
+                style={{
+                  background: '#0B3D2E',
+                  border: '1px solid rgba(200,169,107,0.4)',
+                  boxShadow: '0 8px 32px rgba(6,35,24,0.35)',
+                  transition: 'all 0.6s cubic-bezier(0.22,1,0.36,1)',
+                }}
+                onMouseEnter={e => e.currentTarget.style.borderColor = 'rgba(200,169,107,0.45)'}
+                onMouseLeave={e => e.currentTarget.style.borderColor = 'rgba(200,169,107,0.18)'}>
+                <div className="mb-3" style={{ color: 'rgba(200,169,107,0.8)' }}><s.Icon size={22} /></div>
+                <div className="gold-text mb-1"
+                  style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: 'clamp(1.8rem, 3.5vw, 2.8rem)', fontWeight: 300, lineHeight: 1 }}>
+                  {s.value}
+                </div>
+                <div style={{ fontFamily: 'Inter, sans-serif', fontSize: '0.55rem', letterSpacing: '0.3em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.4)' }}>
+                  {s.label}
+                </div>
               </div>
-              <div style={{ fontFamily: 'Inter, sans-serif', fontSize: '0.55rem', letterSpacing: '0.3em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.4)' }}>
-                {s.label}
-              </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
 

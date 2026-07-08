@@ -1,4 +1,6 @@
 import React from 'react';
+import pxl1Img from '../assets/PXL_20230513_111615067.jpg';
+import pxl2Img from '../assets/PXL_20231011_085500846.jpg';
 import useInView from './useInView';
 import { LeafIcon, ShieldIcon, StarIcon, HomeIcon, RecycleIcon, GlobeIcon } from './Icons';
 
@@ -7,7 +9,7 @@ const pillars = [
   { Icon: ShieldIcon, title: 'Conservation', desc: 'Protecting Africa\'s wildlife corridors and biodiversity with communities.' },
   { Icon: StarIcon, title: 'Youth Empowerment', desc: 'Investing in Africa\'s next generation through mentorship and opportunity.' },
   { Icon: HomeIcon, title: 'Community Resilience', desc: 'Strengthening local economies so tourism creates lasting dignity.' },
-  { Icon: RecycleIcon, title: 'Regenerative Travel', desc: 'Leaving destinations measurably better than we found them.' },
+  { Icon: RecycleIcon, title: 'Regenerative Wellness', desc: 'Leaving destinations measurably better than we found them.' },
 ];
 
 const AboutKovu = () => {
@@ -60,8 +62,8 @@ const AboutKovu = () => {
 
           <div className="lg:col-span-4 relative" style={fade(0.35)}>
             <div className="img-zoom rounded-3xl overflow-hidden" style={{ height: '580px' }}>
-              <img src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=800&q=85"
-                alt="African community" className="w-full h-full object-cover" />
+              <img src={new URL('../assets/PXL_20230513_132254340.jpg', import.meta.url).href}
+                alt="VistaVoyage Ethos" className="w-full h-full object-cover" />
               <div className="absolute inset-0 pointer-events-none"
                 style={{ background: 'linear-gradient(to top, rgba(6,35,24,0.5) 0%, transparent 50%)' }} />
             </div>
@@ -80,17 +82,21 @@ const AboutKovu = () => {
           </div>
 
           <div className="lg:col-span-3 flex flex-col gap-4" style={fade(0.5, 'right')}>
-            <div className="img-zoom rounded-2xl overflow-hidden flex-1" style={{ minHeight: '260px' }}>
-              <img src="https://images.unsplash.com/photo-1489392191049-fc10c97e64b6?w=600&q=80"
+            <div className="img-zoom rounded-2xl overflow-hidden flex-1" style={{ height: '200px' }}>
+              <img src={pxl1Img}
                 alt="African landscape" className="w-full h-full object-cover" />
             </div>
-            <div className="rounded-2xl p-6 flex-1"
-              style={{ background: 'linear-gradient(135deg, #0B3D2E, #0d4d39)', border: '1px solid rgba(200,169,107,0.15)', minHeight: '260px', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end' }}>
-              <div style={{ color: 'rgba(200,169,107,0.8)', marginBottom: '1rem' }}><GlobeIcon size={32} /></div>
-              <p style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: '1.2rem', color: 'white', fontWeight: 300, lineHeight: 1.4 }}>
-                Regenerative travel for a thriving Africa
-              </p>
-              <div className="h-px mt-4" style={{ background: 'linear-gradient(90deg, #C8A96B, transparent)' }} />
+            <div className="rounded-2xl overflow-hidden flex-1" style={{ height: '200px', position: 'relative' }}>
+              <img src={pxl2Img}
+                alt="African community" className="w-full h-full object-cover" />
+              <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgba(6,35,24,0.7) 0%, transparent 60%)' }} />
+              <div className="absolute bottom-0 left-0 p-6">
+                <div style={{ color: 'rgba(200,169,107,0.8)', marginBottom: '0.75rem' }}><GlobeIcon size={28} /></div>
+                <p style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: '1.1rem', color: 'white', fontWeight: 300, lineHeight: 1.4 }}>
+                  Regenerative travel for a thriving Africa
+                </p>
+                <div className="h-px mt-3" style={{ background: 'linear-gradient(90deg, #C8A96B, transparent)' }} />
+              </div>
             </div>
           </div>
         </div>

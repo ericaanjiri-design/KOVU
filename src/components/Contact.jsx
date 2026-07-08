@@ -4,8 +4,8 @@ import { MapPinIcon, WebIcon, CameraIcon } from './Icons';
 
 const contactItems = [
   { Icon: MapPinIcon, label: 'Address', value: 'Applewood Adams, Ngong Road\nNairobi — 9th Floor, Office 904B' },
-  { Icon: WebIcon, label: 'Website', value: 'vistavoyagetravel.group' },
-  { Icon: CameraIcon, label: 'Instagram', value: '@VistaVoyage' },
+  { Icon: WebIcon, label: 'Website', value: 'kovuafrika.org' },
+  { Icon: CameraIcon, label: 'Instagram', value: '@KovuAfrika' },
 ];
 
 const Contact = () => {
@@ -50,7 +50,7 @@ const Contact = () => {
                   Kovu Afrika
                 </h3>
                 <p style={{ fontFamily: 'Inter, sans-serif', fontSize: '0.55rem', letterSpacing: '0.4em', textTransform: 'uppercase', color: 'rgba(200,169,107,0.6)' }}>
-                  VistaVoyage CSR Foundation
+                  VistaVoyage Foundation
                 </p>
               </div>
 
@@ -77,12 +77,12 @@ const Contact = () => {
               <div className="rounded-2xl p-5"
                 style={{ background: 'rgba(200,169,107,0.06)', border: '1px solid rgba(200,169,107,0.15)' }}>
                 <p style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: '1.1rem', fontStyle: 'italic', color: 'rgba(255,255,255,0.75)', lineHeight: 1.6 }}>
-                  "Navigating Dreams, Endless Vistas"
+                  "Healing Landscapes. Empowering Lives."
                 </p>
                 <div className="flex items-center gap-2 mt-3">
                   <div className="h-px w-5" style={{ background: '#C8A96B' }} />
                   <span style={{ fontFamily: 'Inter, sans-serif', fontSize: '0.5rem', letterSpacing: '0.35em', textTransform: 'uppercase', color: 'rgba(200,169,107,0.6)' }}>
-                    VistaVoyage Travel Group
+                    Kovu Afrika
                   </span>
                 </div>
               </div>

@@ -7,7 +7,7 @@ const ecosystems = [
     subtitle: 'Community Well-being & Inclusive Livelihoods',
     desc: 'Strengthening communities within tourism ecosystems through education, health equity, economic empowerment, and dignified opportunities for all.',
     tags: ['Education', 'Women Empowerment', 'Sanitary Initiatives', 'Local Livelihoods', 'Cultural Preservation'],
-    img: 'https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?w=900&q=85',
+    img: new URL('../assets/PXL_20230513_132254340.jpg', import.meta.url).href,
     number: '01',
   },
   {
@@ -15,7 +15,7 @@ const ecosystems = [
     subtitle: 'Conservation & Climate Futures',
     desc: 'Protecting Africa\'s ecosystems through community-driven conservation, regenerative tourism, and climate innovation that secures biodiversity for generations.',
     tags: ['Reforestation', 'Biodiversity', 'Eco-Tourism', 'Wildlife Protection', 'Climate Innovation'],
-    img: 'https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=900&q=85',
+    img: new URL('../assets/planting.png', import.meta.url).href,
     number: '02',
   },
   {
@@ -23,7 +23,7 @@ const ecosystems = [
     subtitle: 'Leadership & African Futures',
     desc: 'Nurturing Africa\'s next generation of ethical leaders, conservationists, tourism innovators, creatives, and entrepreneurs through structured mentorship.',
     tags: ['Mentorship', 'Innovation', 'Leadership', 'Entrepreneurship', 'Youth Empowerment'],
-    img: 'https://images.unsplash.com/photo-1529390079861-591de354faf5?w=900&q=85',
+    img: new URL('../assets/PXL_20230513_103321384.jpg', import.meta.url).href,
     number: '03',
   },
 ];

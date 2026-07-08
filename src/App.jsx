@@ -1,13 +1,10 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useState } from 'react';
 import Loader from './components/Loader';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import AboutKovu from './components/AboutKovu';
 import ImpactEcosystems from './components/ImpactEcosystems';
 import ImpactNumbers from './components/ImpactNumbers';
-import InclusiveTravel from './components/InclusiveTravel';
-import RegenerativeWellness from './components/RegenerativeWellness';
-import WhyItMatters from './components/WhyItMatters';
 import Partnership from './components/Partnership';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
@@ -37,9 +34,6 @@ function App() {
         <AboutKovu />
         <ImpactEcosystems />
         <ImpactNumbers />
-        <InclusiveTravel />
-        <RegenerativeWellness />
-        <WhyItMatters />
         <Partnership />
         <Contact />
       </main>
